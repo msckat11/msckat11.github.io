@@ -3,32 +3,96 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Activity 1: Basic HTML Bio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Web Page Challenge</title>
 </head>
 
 <body>
-    <h1>Katie Schuman</h1>
-    <img src="http://lorempixel.com/400/200/" alt="Don't I look amazing in this picture of me?">
+    <!-- Add in Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- end of navbar -->
 
-    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-        qui
-        ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-        nihil
-        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+    <!-- beginning of container -->
+    <div class="container">
+        <!-- landing page title -->
+        <h1>Summary: Latitude vs. X</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <img src="http://lorempixel.com/400/200/" alt="Don't I look amazing in this picture of me?">
 
-    <ol>https://github.com/msckat11</ol>
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish
+                    this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
+                    cities.</p>
+
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we
+                    looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source
+                    data and
+                    visualizations created as part of the analysis, as well as explanations and descriptions of any
+                    trends and
+                    correlations witnessed.</p>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="row">
+                    <h2>Visualizations</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="http://lorempixel.com/400/200/">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="http://lorempixel.com/400/200/">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="http://lorempixel.com/400/200/">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
